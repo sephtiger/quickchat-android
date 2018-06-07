@@ -11,7 +11,7 @@ import io.reactivex.functions.Consumer
  * Created by seph on 29/05/2018.
  */
 
-class QuickChatFirebaseInstanceIDService: FirebaseInstanceIdService() {
+internal class QuickChatFirebaseInstanceIDService: FirebaseInstanceIdService() {
 
     @android.support.annotation.WorkerThread
     override fun onTokenRefresh() {

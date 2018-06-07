@@ -29,6 +29,7 @@ class QuickChat private constructor(private val user: User) {
             token?.let { getInstance().setToken(it).subscribe() }
         }
 
+        @JvmStatic
         @Synchronized
         fun getInstance() : QuickChat {
             return  QuickChat(user ?: throw IllegalStateException("QuickChat not properly initialized"))

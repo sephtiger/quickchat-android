@@ -13,7 +13,7 @@ import android.os.Build
  * Created by seph on 29/05/2018.
  */
 
-class QuickChatFirebaseMessagingService: FirebaseMessagingService() {
+internal class QuickChatFirebaseMessagingService: FirebaseMessagingService() {
 
     override fun onMessageReceived(remoteMessage: RemoteMessage?) {
         super.onMessageReceived(remoteMessage)
